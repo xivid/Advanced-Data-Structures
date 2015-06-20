@@ -1,0 +1,22 @@
+public class RedBlackBSTclient
+{
+   public static void main(String[] args)
+   {
+      int N = Integer.parseInt(args[0]);
+      StdDraw.setPenRadius(.0025);
+      while (true) 
+      {
+        RedBlackBST<Integer, Integer> st = new RedBlackBST<Integer, Integer>();
+         for (int i = 0; i < N; i++)
+         {
+            int key = StdRandom.uniform(N);
+            st.put(key, i);
+            StdDraw.clear(StdDraw.LIGHT_GRAY);
+            st.draw(.95, .0025, .008);
+            StdDraw.show(1);
+         }
+         StdDraw.show(1000);
+      }
+   }
+
+}

@@ -1,0 +1,2 @@
+./QuickSort
+python ./demo.py
